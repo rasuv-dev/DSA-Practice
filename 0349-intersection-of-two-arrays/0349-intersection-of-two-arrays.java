@@ -1,19 +1,24 @@
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
-        //for storing the intersections
-        Set<Integer> intersectionSet = new HashSet<Integer>();
+        //store the nums1 into set to ensure lookup in constant time
+        Set<Integer> numsSet = new HashSet<>();
 
-        //select the element of fisrt array
-        for (int num : nums1) {
-            //traverse the nums2 to check the whether seleted eleemnt present  in it.
-            for (int n : nums2) {
-                if (n == num) {
-                    intersectionSet.add(n);
-                    break;
-                }
+        for(int num:nums1){
+            numsSet.add(num);
+        }
+        
+        //store the intercetion
+        Set<Integer> resultSet = new HashSet<>();
+
+        //check each element is common in both or not
+        for(int num:nums2){
+            if(numsSet.contains(num)){
+                //common found!,add it to result it!
+                resultSet.add(num);
             }
         }
-        //convert the set into the integer array and return it
-        return intersectionSet.stream().mapToInt((k) -> k).toArray();
+        
+        return resultSet.stream().mapToInt(k->k).toArray();
+
     }
 }
