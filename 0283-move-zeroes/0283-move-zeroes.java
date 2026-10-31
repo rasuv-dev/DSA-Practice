@@ -1,18 +1,23 @@
 class Solution {
     public void moveZeroes(int[] nums) {
-        //index to track the places to place the element
-        int index = 0;
+        int j = -1;
 
         for (int i = 0; i < nums.length; i++) {
-            //if the element is non-zero
-            if (nums[i] != 0) {
-                //place the element on index and increment the index
-                nums[index++] = nums[i];
+            if (nums[i] == 0) {
+                j = i;
+                break;
             }
         }
 
-        while (index < nums.length) {
-            nums[index++] = 0;
+        if (j==-1) return;
+
+        for (int i = j + 1; i < nums.length; i++) {
+            if (nums[j] == 0 && nums[i] != 0) {
+                int temp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp;
+                j++;
+            }
         }
     }
 }
