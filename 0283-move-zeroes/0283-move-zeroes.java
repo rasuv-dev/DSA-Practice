@@ -12,7 +12,7 @@ class Solution {
         if (j==-1) return;
 
         for (int i = j + 1; i < nums.length; i++) {
-            if (nums[j] == 0 && nums[i] != 0) {
+            if (nums[i] != 0) {
                 int temp = nums[i];
                 nums[i] = nums[j];
                 nums[j] = temp;
