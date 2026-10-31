@@ -7,7 +7,8 @@ class Solution {
         int n = nums.length;
 
         //array to remember the last k elemenents
-        int[] lastKElements = new int[k];
+        int[] lastKElements = new int[k]; 
+        
 
         //store the last k elements
         for (int i = 0; i < k; i++) {
