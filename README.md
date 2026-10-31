@@ -12,5 +12,14 @@ To improve problem-solving skills, learn efficient algorithms, and prepare for t
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0189-rotate-array](https://github.com/rasuv-dev/DSA-Practice/tree/main/0189-rotate-array/) | Medium |
 | [0485-max-consecutive-ones](https://github.com/rasuv-dev/DSA-Practice/tree/main/0485-max-consecutive-ones/) | Easy |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0189-rotate-array](https://github.com/rasuv-dev/DSA-Practice/tree/main/0189-rotate-array/) | Medium |
+## Two Pointers
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0189-rotate-array](https://github.com/rasuv-dev/DSA-Practice/tree/main/0189-rotate-array/) | Medium |
 <!---LeetCode Topics End-->
